@@ -23,7 +23,11 @@
     <!-- Menu Partials -->
     <%= render 'layouts/navigation' %>
 
-     <%= yield %>
+    <% flash.each do |key, message| %>
+      <p class="alert alert-<%= key %>"><%= messaage %></p>
+    <% end %>
+
+    <%= yield %>
 
     <!-- Footer Partials -->
     <%= render 'layouts/footer' %>
