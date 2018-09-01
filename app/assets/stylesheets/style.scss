@@ -1329,3 +1329,13 @@ p {
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,0,0,0.4);
 }
+
+.devise-form {
+  color: white;
+  h2 {
+    color: white;
+  }
+  .form-control {
+    width: 40%;
+  }
+}
